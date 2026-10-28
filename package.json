@@ -1,5 +1,5 @@
 {
-  "name": "universal-downloader",
+  "name": "unidl",
   "version": "0.1.0",
   "description": "Download files from any file host (GoFile, SwissTransfer, MediaFire, direct links...) with pause/resume, speed, ETA and concurrent downloads.",
   "type": "module",
@@ -8,7 +8,7 @@
     ".": "./src/index.js"
   },
   "bin": {
-    "udl": "./bin/udl.js"
+    "udl": "bin/udl.js"
   },
   "files": [
     "src",

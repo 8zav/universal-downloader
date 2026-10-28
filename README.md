@@ -1,4 +1,4 @@
-# universal-downloader
+# universal-downloader (npm: `unidl`)
 
 Download files from file-sharing services with one API: **pause / resume**, **live speed**, **bytes left**, **ETA** and **concurrent downloads**. Zero dependencies, Node.js 18.17+.
 
@@ -26,13 +26,13 @@ Planned: Mega (needs client-side decryption), OneDrive, 1fichier, Bunkr. Adding 
 ## Install
 
 ```bash
-npm install universal-downloader
+npm install unidl
 ```
 
 ## Usage
 
 ```js
-import { DownloadManager, formatBytes, formatSpeed } from 'universal-downloader';
+import { DownloadManager, formatBytes, formatSpeed } from 'unidl';
 
 const manager = new DownloadManager({ dir: './downloads', concurrency: 3 });
 
@@ -58,7 +58,7 @@ A share link can contain many files: `manager.add()` returns one `Download` per 
 One-shot helper:
 
 ```js
-import { download } from 'universal-downloader';
+import { download } from 'unidl';
 const paths = await download(['https://gofile.io/d/abc123'], { dir: './out' });
 ```
 
@@ -71,7 +71,7 @@ Bytes are numbers (use `formatBytes`); `eta` is in seconds and `etaText` is form
 ## CLI
 
 ```bash
-npx udl <url...> -o ./downloads -c 3
+npx unidl <url...> -o ./downloads -c 3
 ```
 
 Keys while running: `p` pause all, `r` resume all, `q` quit (partial files are kept).
