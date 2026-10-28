@@ -1,0 +1,14 @@
+node_modules/
+downloads/
+*.part
+.env
+.env.*
+npm-debug.log*
+coverage/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+*.tgz

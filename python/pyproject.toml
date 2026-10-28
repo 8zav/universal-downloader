@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-downloader"
+version = "0.1.0"
+description = "Download files from any file host (GoFile, SwissTransfer, MediaFire, Google Drive...) with pause/resume, speed, ETA and concurrent downloads."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["download", "downloader", "gofile", "swisstransfer", "mediafire", "resume", "file-host"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.scripts]
+udl = "universal_downloader.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,35 @@
+{
+  "name": "universal-downloader",
+  "version": "0.1.0",
+  "description": "Download files from any file host (GoFile, SwissTransfer, MediaFire, direct links...) with pause/resume, speed, ETA and concurrent downloads.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "udl": "./bin/udl.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "keywords": [
+    "download",
+    "downloader",
+    "gofile",
+    "swisstransfer",
+    "mediafire",
+    "resume",
+    "file-host"
+  ],
+  "license": "MIT"
+}
